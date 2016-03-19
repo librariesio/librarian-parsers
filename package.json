@@ -1,0 +1,33 @@
+{
+  "name": "librarian-parsers",
+  "version": "1.0.0",
+  "description": "Manifest parsers for Libraries.io",
+  "main": "lib/parsers/index.js",
+  "scripts": {
+    "test": "mocha --harmony_destructuring"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/librariesio/librarian-parsers.git"
+  },
+  "keywords": [
+    "dependency",
+    "manifest",
+    "parsers",
+    "libraries.io"
+  ],
+  "author": "Andrew Nesbitt",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/librariesio/librarian-parsers/issues"
+  },
+  "homepage": "https://github.com/librariesio/librarian-parsers",
+  "dependencies": {
+    "bluebird": "^3.3.4",
+    "js-yaml": "^3.5.5",
+    "mocha": "^2.4.5",
+    "request-promise": "^2.0.1",
+    "toml": "^2.3.0",
+    "xml2json": "^0.9.0"
+  }
+}
