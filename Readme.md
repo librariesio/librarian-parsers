@@ -5,7 +5,7 @@
 [![devDependency Status](https://david-dm.org/librariesio/librarian-parsers/dev-status.svg?theme=shields.io)](https://david-dm.org/librariesio/librarian-parsers#info=devDependencies)
 [![Gitter chat](http://img.shields.io/badge/gitter-librariesio/support-brightgreen.svg)](https://gitter.im/librariesio/support)
 
-Dependency Manifest parsers for Libraries.io
+Dependency manifest parsers for [Libraries.io](https://libraries.io)
 
 ## Install
 
