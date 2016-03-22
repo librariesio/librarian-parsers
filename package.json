@@ -4,7 +4,7 @@
   "description": "Dependency manifest parsers for Libraries.io",
   "main": "lib/parsers/index.js",
   "scripts": {
-    "test": "mocha --harmony_destructuring"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
