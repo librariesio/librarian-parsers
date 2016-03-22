@@ -1,6 +1,6 @@
 {
   "name": "librarian-parsers",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Dependency manifest parsers for Libraries.io",
   "main": "lib/parsers/index.js",
   "scripts": {
