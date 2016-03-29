@@ -246,6 +246,16 @@ var platformTests = [
     invalidManifestPaths: []
   },
   {
+    platform: 'pypiSetup',
+    fixture: 'setup.py',
+    expected: [
+      {name: 'django-bootstrap3', version: '>=6.2,<6.3', type: 'runtime'},
+      {name: 'lesscpy', version: '*', type: 'runtime'},
+    ],
+    validManifestPaths: ['setup.py'],
+    invalidManifestPaths: []
+  },
+  {
     platform: 'cocoapods',
     fixture: 'Podfile',
     expected: [
