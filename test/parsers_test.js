@@ -257,6 +257,16 @@ var platformTests = [
     invalidManifestPaths: []
   },
   {
+    platform: 'pypiSetup',
+    fixture: 'setup2.py',
+    expected: [
+      {name: 'setuptools', version: '*', type: 'runtime'},
+      {name: 'six', version: '*', type: 'runtime'},
+    ],
+    validManifestPaths: ['setup.py'],
+    invalidManifestPaths: []
+  },
+  {
     platform: 'cocoapods',
     fixture: 'Podfile',
     expected: [
