@@ -237,10 +237,11 @@ var platformTests = [
     fixture: 'requirements.txt',
     expected: [
       {name: 'foo', version: '*', type: 'runtime'},
-      {name: 'Flask', version: '0.8', type: 'runtime'},
-      {name: 'zope.component', version: '4.2.2', type: 'runtime'},
-      {name: 'scikit-learn', version: '0.16.1', type: 'runtime'},
-      {name: 'Beaker', version: '1.6.5', type: 'runtime'}
+      {name: 'Flask', version: '==0.8', type: 'runtime'},
+      {name: 'django-bootstrap3', version: '>=6.2,<6.3', type: 'runtime'},
+      {name: 'zope.component', version: '==4.2.2', type: 'runtime'},
+      {name: 'scikit-learn', version: '==0.16.1', type: 'runtime'},
+      {name: 'Beaker', version: '>=1.6.5', type: 'runtime'}
     ],
     validManifestPaths: ['requirements.txt'],
     invalidManifestPaths: []
