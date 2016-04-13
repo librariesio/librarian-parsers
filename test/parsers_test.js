@@ -96,6 +96,15 @@ var platformTests = [
     invalidManifestPaths: []
   },
   {
+    platform: 'podspecJson',
+    fixture: 'ALOSRPAuth.podspec.json',
+    expected: [
+      { name: 'OpenSSL', version: "~> 1.0", type: 'runtime' }
+    ],
+    validManifestPaths: ['ALOSRPAuth.podspec.json', 'foo_meh-bar.podspec.json'],
+    invalidManifestPaths: []
+  },
+  {
     platform: 'packagist',
     fixture: 'composer.json',
     expected: [
