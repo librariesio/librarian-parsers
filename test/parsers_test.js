@@ -202,6 +202,15 @@ var platformTests = [
     invalidManifestPaths: []
   },
   {
+    platform: 'dubSdl',
+    fixture: 'dub.sdl',
+    expected: [
+      {name: 'vibe-d', version: '~>0.7.23', type: 'runtime'},
+    ],
+    validManifestPaths: ['dub.sdl'],
+    invalidManifestPaths: []
+  },
+  {
     platform: 'pub',
     fixture: 'pubspec.yaml',
     expected: [
