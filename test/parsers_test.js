@@ -183,6 +183,16 @@ var platformTests = [
     invalidManifestPaths: ['node_modules/foo/elm_dependencies.json']
   },
   {
+    platform: 'elmExact',
+    fixture: 'exact-dependencies.json',
+    expected: [
+      {name: "jvoigtlaender/elm-drag-and-drop", version: "1.0.1", type: 'runtime'},
+      {name: "evancz/elm-html", version: "2.0.0", type: "runtime"}
+    ],
+    validManifestPaths: ['elm-stuff/exact-dependencies.json'],
+    invalidManifestPaths: ['node_modules/foo/elm-stuff/exact-dependencies.json']
+  },
+  {
     platform: 'bower',
     fixture: 'bower.json',
     expected: [
