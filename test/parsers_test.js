@@ -447,7 +447,7 @@ var platformTests = [
 ];
 
 describe('Parser', function(){
-  this.timeout(5000);
+  this.timeout(15000);
 
   platformTests.forEach(function(test) {
     it('should handle '+ test.platform +' fixtures', function(done) {
