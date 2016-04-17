@@ -27,7 +27,8 @@
     "js-yaml": "^3.5.5",
     "request-promise": "^2.0.1",
     "toml": "^2.3.0",
-    "xml2json": "^0.9.0"
+    "xml2json": "^0.9.0",
+    "readcontrol": "librariesio/node-readcontrol"
   },
   "devDependencies": {
     "mocha": "^2.4.5"

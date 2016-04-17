@@ -34,6 +34,16 @@ var platformTests = [
     invalidManifestPaths: []
   },
   {
+    platform: 'cran',
+    fixture: 'DESCRIPTION',
+    expected: [
+      {name: "R", version: ">= 3.1", type: 'depends'},
+      {name: "digest", version: "*", type: 'imports'}
+    ],
+    validManifestPaths: ['DESCRIPTION'],
+    invalidManifestPaths: []
+  },
+  {
     platform: 'npmshrinkwrap',
     fixture: 'npm-shrinkwrap.json',
     expected: [
