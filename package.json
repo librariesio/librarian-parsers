@@ -28,7 +28,7 @@
     "readcontrol": "^1.0.0",
     "request-promise": "^3.0.0",
     "toml": "^2.3.0",
-    "xml2json": "^0.9.0",
+    "xml2js": "^0.4.16"
   },
   "devDependencies": {
     "mocha": "^2.4.5"
