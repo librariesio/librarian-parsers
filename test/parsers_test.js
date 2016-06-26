@@ -274,7 +274,11 @@ var platformTests = [
     platform: 'hexLock',
     fixture: 'mix.lock',
     expected: [
-      {name: 'cowboy', version: '1.0.0', type: 'runtime'}
+      { name: 'ranch', version: '1.2.1', type: 'runtime' },
+      { name: 'poison', version: '2.1.0', type: 'runtime' },
+      { name: 'plug', version: '1.1.6', type: 'runtime' },
+      { name: 'cowlib', version: '1.0.2', type: 'runtime' },
+      { name: 'cowboy', version: '1.0.4', type: 'runtime' }
     ],
     validManifestPaths: ['mix.lock'],
     invalidManifestPaths: []
