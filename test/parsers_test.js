@@ -446,6 +446,15 @@ var platformTests = [
     invalidManifestPaths: []
   },
   {
+    platform: 'gradle',
+    fixture: 'build.gradle',
+    expected: [
+      { name: 'com.squareup.dagger:dagger', version: '1.2.2', type: 'runtime' }
+    ],
+    validManifestPaths: ['build.gradle'],
+    invalidManifestPaths: []
+  },
+  {
     platform: 'shard',
     fixture: 'shard.yml',
     expected: [

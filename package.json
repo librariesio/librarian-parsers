@@ -24,6 +24,7 @@
   "homepage": "https://github.com/librariesio/librarian-parsers",
   "dependencies": {
     "bluebird": "^3.3.4",
+    "gradle-to-js": "^0.1.0",
     "js-yaml": "^3.5.5",
     "readcontrol": "^1.0.0",
     "request-promise": "^3.0.0",
