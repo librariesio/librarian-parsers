@@ -3,8 +3,6 @@ platforms:
     jade:
       tests:
         deprecated: skip
-
-platforms:
   NuGet:
     tests:
       unlicensed: skip
