@@ -363,6 +363,16 @@ var platformTests = [
     invalidManifestPaths: []
   },
   {
+    platform: 'paket',
+    fixture: 'paket.lock',
+    expected: [
+      { name: 'Argu', version: '2.1', type: 'runtime' },
+      { name: 'Mono.Cecil', version: '0.9.6.1', type: 'runtime' }
+    ],
+    validManifestPaths: ['paket.lock'],
+    invalidManifestPaths: []
+  },
+  {
     platform: 'julia',
     fixture: 'REQUIRE',
     expected: [
