@@ -487,7 +487,7 @@ var platformTests = [
     invalidManifestPaths: []
   },
   {
-    platform: 'swift',
+    platform: 'swiftpm',
     fixture: 'Package.swift',
     expected: [
       {name: 'github.com/qutheory/vapor', version: '0.12.0 - 0.12.9223372036854775807', type: 'runtime'},
