@@ -150,8 +150,8 @@ var platformTests = [
     platform: 'packagistlockfile',
     fixture: 'composer.lock',
     expected: [
-      ['doctrine/annotations', 'v1.2.1'],
-      ['doctrine/cache', 'v1.3.1']
+      { name: 'doctrine/annotations', version: 'v1.2.1', type: 'runtime' },
+      { name: 'doctrine/cache', version: 'v1.3.1', type: 'runtime' }
     ],
     validManifestPaths: ['composer.lock'],
     invalidManifestPaths: []
