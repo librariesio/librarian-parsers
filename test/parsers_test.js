@@ -142,7 +142,9 @@ var platformTests = [
   {
     platform: 'meteor',
     fixture: 'versions.json',
-    expected: [["accounts-base", "1.1.2"]],
+    expected: [
+      {name: "accounts-base", version: "1.1.2", type: 'runtime'}
+    ],
     validManifestPaths: ['versions.json'],
     invalidManifestPaths: []
   },
