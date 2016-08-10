@@ -47,7 +47,8 @@ var platformTests = [
     platform: 'npmshrinkwrap',
     fixture: 'npm-shrinkwrap.json',
     expected: [
-      {name: 'babel', version: '4.7.16', type: 'runtime'}
+      {name: 'babel', version: '4.7.16', type: 'runtime'},
+      {name: 'acorn-babel', version: '0.11.1-38', type: 'runtime'}
     ],
     validManifestPaths: ['npm-shrinkwrap.json'],
     invalidManifestPaths: ['node_modules/foo/npm-shrinkwrap.json']
