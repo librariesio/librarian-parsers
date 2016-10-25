@@ -498,6 +498,18 @@ var platformTests = [
     ],
     validManifestPaths: ['Package.swift'],
     invalidManifestPaths: []
+  },
+  {
+    platform: 'yarn',
+    fixture: 'yarn.lock',
+    expected: [
+      { name: 'accepts', version: '1.3.3', type: 'runtime' },
+      { name: 'ansi-regex', version: '2.0.0', type: 'runtime' },
+      { name: 'ansi-styles', version: '2.2.1', type: 'runtime' },
+      { name: 'argparse', version: '1.0.9', type: 'runtime' }
+    ],
+    validManifestPaths: ['yarn.lock'],
+    invalidManifestPaths: []
   }
 ];
 
