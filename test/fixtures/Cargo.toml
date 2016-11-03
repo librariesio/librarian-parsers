@@ -8,4 +8,5 @@ authors = ["Jorge Aparicio <japaricious@gmail.com>",
 [dependencies]
 
 rustc-serialize = "*"
-regex = "*"
+regex = {version = "*", features = ["feature"]}
+local_crate = {path = "../local_crate"}
