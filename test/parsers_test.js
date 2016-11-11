@@ -173,7 +173,11 @@ var platformTests = [
     platform: 'cargo',
     fixture: 'Cargo.toml',
     expected: [
-      {name: "rustc-serialize", version: "*", type: 'runtime'}
+      {name: "rustc-serialize", version: "*", type: 'runtime'},
+      {name: "regex", version: "*", type: 'runtime'}
+    ],
+    unexpected: [
+      "local_crate"
     ],
     validManifestPaths: ['Cargo.toml'],
     invalidManifestPaths: []
@@ -182,7 +186,11 @@ var platformTests = [
     platform: 'cargolockfile',
     fixture: 'Cargo.lock',
     expected: [
+      {name: "aaa-local-crate-dependency", version: "0.17.1", type: 'runtime'},
       {name: "advapi32-sys", version: "0.1.2", type: 'runtime'}
+    ],
+    unexpected: [
+      "aaa-local-crate"
     ],
     validManifestPaths: ['Cargo.lock'],
     invalidManifestPaths: []
@@ -534,6 +542,13 @@ describe('Parser', function(){
         test.expected.forEach(function(pkg, i) {
           assert.deepEqual(packages[i], pkg);
         });
+        if ('unexpected' in test) {
+          test.unexpected.forEach(function(unexpected) {
+            packages.forEach(function(pkg) {
+              assert.notEqual(pkg.name, unexpected);
+            });
+          });
+        }
       })
       .then(done)
       .catch(done);

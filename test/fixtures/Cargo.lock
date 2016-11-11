@@ -6,6 +6,7 @@ dependencies = [
  "chrono 0.2.17 (registry+https://github.com/rust-lang/crates.io-index)",
  "docopt 0.6.78 (registry+https://github.com/rust-lang/crates.io-index)",
  "hashindexed 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "local_crate 0.1.0",
  "rand 0.3.12 (registry+https://github.com/rust-lang/crates.io-index)",
  "regex 0.1.44 (registry+https://github.com/rust-lang/crates.io-index)",
  "rust-crypto 0.2.34 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -13,6 +14,19 @@ dependencies = [
  "vec_map 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "walkdir 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
+
+[[package]]
+name = "aaa-local-crate"
+version = "0.1.0"
+dependencies = [
+ "aaa-local-crate-depdendency 0.17.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "aaa-local-crate-dependency"
+version = "0.17.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
 
 [[package]]
 name = "advapi32-sys"
