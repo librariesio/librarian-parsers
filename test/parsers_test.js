@@ -164,7 +164,8 @@ var platformTests = [
     fixture: 'composer.lock',
     expected: [
       { name: 'doctrine/annotations', version: 'v1.2.1', type: 'runtime' },
-      { name: 'doctrine/cache', version: 'v1.3.1', type: 'runtime' }
+      { name: 'doctrine/cache', version: 'v1.3.1', type: 'runtime' },
+      { name: 'sensio/generator-bundle', version: 'v2.5.0', type: 'development' }
     ],
     validManifestPaths: ['composer.lock'],
     invalidManifestPaths: []
