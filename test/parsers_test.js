@@ -352,7 +352,8 @@ var platformTests = [
     platform: 'cocoapodsLockfile',
     fixture: 'Podfile.lock',
     expected: [
-      {name: 'Alamofire', version: '2.0.1', type: 'runtime'}
+      {name: 'Alamofire', version: '2.0.1', type: 'runtime'},
+      {name: 'ARAnalytics', version: '3.8.0', type: 'runtime'}
     ],
     validManifestPaths: ['Podfile.lock'],
     invalidManifestPaths: []
