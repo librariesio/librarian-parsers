@@ -484,7 +484,7 @@ var platformTests = [
     expected: [
       { name: 'com.squareup.dagger:dagger', version: '1.2.2', type: 'runtime' }
     ],
-    validManifestPaths: ['build.gradle'],
+    validManifestPaths: ['build.gradle', 'kork-jedis-test.gradle'],
     invalidManifestPaths: []
   },
   {
