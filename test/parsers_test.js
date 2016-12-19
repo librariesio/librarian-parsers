@@ -415,6 +415,15 @@ var platformTests = [
     invalidManifestPaths: []
   },
   {
+    platform: 'gpm',
+    fixture: 'Godeps',
+    expected: [
+      {name: "github.com/nu7hatch/gotrail", version: "v0.0.2", type: 'runtime'}
+    ],
+    validManifestPaths: ['Godeps'],
+    invalidManifestPaths: []
+  },
+  {
     platform: 'gb',
     fixture: 'manifest',
     expected: [
