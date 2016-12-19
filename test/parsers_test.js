@@ -415,6 +415,15 @@ var platformTests = [
     invalidManifestPaths: []
   },
   {
+    platform: 'gb',
+    fixture: 'manifest',
+    expected: [
+      {name: "github.com/kr/fs", version: "2788f0dbd16903de03cb8186e5c7d97b69ad387b", type: 'runtime'}
+    ],
+    validManifestPaths: ['vendor/manifest'],
+    invalidManifestPaths: []
+  },
+  {
     platform: 'glide',
     fixture: 'glide.yaml',
     expected: [
