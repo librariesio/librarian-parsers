@@ -424,6 +424,15 @@ var platformTests = [
     invalidManifestPaths: []
   },
   {
+    platform: 'govendor',
+    fixture: 'vendor.json',
+    expected: [
+      {name: "github.com/Bowery/prompt", version: "d43c2707a6c5a152a344c64bb4fed657e2908a81", type: 'runtime'}
+    ],
+    validManifestPaths: ['vendor/vendor.json'],
+    invalidManifestPaths: []
+  },
+  {
     platform: 'glide',
     fixture: 'glide.yaml',
     expected: [
