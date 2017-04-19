@@ -28,7 +28,7 @@
     "js-yaml": "^3.5.5",
     "readcontrol": "^1.0.0",
     "request": "^2.73.0",
-    "request-promise": "^4.0.0",
+    "request-promise": "^4.0.1",
     "toml": "^2.3.0",
     "xml2js": "^0.4.16",
     "yarn": "^0.21.0"
